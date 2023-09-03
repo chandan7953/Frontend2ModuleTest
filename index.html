@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+
+    <div id="home">
+      <div>Weather Api</div>
+      <button id="fetch-data">Fetch Data</button>
+    </div>
+
+
+    <!-- *********************************** -->
+    <div id="section2">
+      <div class="weather-location">
+        <h1>Welcome To The Weather App</h1>
+        <p>Here is your current location</p>
+
+        <div class="location">
+          <div id="latitude">Lat: 19.9974533</div>
+          <div id="longitude">Long: 73.7898023</div>
+        </div>
+
+        <div class="map">
+          <!-- <iframe
+            src="https://maps.google.com/maps?q=19.9974533,73.7898023&z=15&output=embed"
+            frameborder="0"
+          ></iframe> -->
+        </div>
+      </div>
+
+      <div class="weather-data">
+        <h1>Your Weather Data</h1>
+
+        <div class="flex">
+          <div class="box" id="location">Location: <span>New Delhi</span></div>
+          <div class="box" id="speed">Wind Speed: <span>100kmph</span></div>
+          <div class="box" id="humidity">Humidity: <span>10</span></div>
+          <div class="box" id="timezone">Time Zone: <span>GMT +530</span></div>
+          <div class="box" id="pressure">Pressure: <span>10atm</span></div>
+          <div class="box" id="direction">
+            Wind Direction: <span>North West</span>
+          </div>
+          <div class="box" id="uv-index">UV Index: <span>500</span></div>
+          <div class="box" id="feels">Feels like: <span>30</span></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
